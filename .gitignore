@@ -1,0 +1,104 @@
+# ========================
+# 1. Archivos Temporales de Python (Compilados/Bytecode)
+# ========================
+
+# Archivos de bytecode
+*.py[cod]
+*.pyd
+*.pyc
+
+# Caché de archivos compilados
+__pycache__/
+
+# Módulos de extensión y C
+*.so
+*.o
+*.dll
+
+
+# ========================
+# 2. Entornos Virtuales (¡Lo más importante!)
+# ========================
+
+# Carpetas de entornos virtuales estándar
+# Descomenta (elimina el #) la que uses o añade la tuya.
+# venv/
+# env/
+.venv/
+.tox/
+.poetry/
+
+# Pipenv
+Pipfile.lock # (Opcional, se recomienda incluirlo en proyectos de apps, ignorarlo en librerías)
+
+# Poetry (generalmente se incluye poetry.lock para reproducibilidad)
+# poetry.lock
+# poetry.toml
+
+
+# ========================
+# 3. Builds y Distribución
+# ========================
+
+# Carpeta de build y distribución
+/build/
+/dist/
+*.egg-info/
+.eggs/
+
+# Archivos de logs y registro de instalación
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+# ========================
+# 4. Logs, Bases de Datos y Datos
+# ========================
+
+# Archivos de logs (los dejas fuera del control de versiones)
+*.log
+*.sqlite3 # Base de datos SQLite3 (común en Django/Flask)
+*.db
+/media/ # Carpeta de archivos subidos por el usuario (común en Django)
+
+
+# ========================
+# 5. Configuración Local del Sistema Operativo
+# ========================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+
+# ========================
+# 6. Archivos de Configuraciones Sensibles/Locales
+# ========================
+
+# Variables de entorno (archivos que contienen claves, tokens, etc.)
+.env
+.flaskenv
+.envrc
+.local/
+
+
+# ========================
+# 7. Configuraciones de IDEs (Editores de Código)
+# ========================
+
+# VS Code
+.vscode/
+
+# PyCharm/JetBrains
+.idea/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
