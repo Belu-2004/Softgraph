@@ -1,5 +1,5 @@
 from models import Cliente
-from services import Persistencia
+from .persistencia import Persistencia
 
 RUTA_CLIENTES = "data/clientes.json"
 

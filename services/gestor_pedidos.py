@@ -1,5 +1,5 @@
-from models.pedidos import Pedido
-from services.persistencia import Persistencia
+from models import Pedido
+from .persistencia import Persistencia
 
 RUTA_PEDIDOS = "data/pedidos.json"
 
