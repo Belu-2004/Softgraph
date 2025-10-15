@@ -3,6 +3,7 @@ class Presupuesto:
     Calcula el presupuesto total de un pedido aplicando funciones matemáticas
     y condiciones lógicas (descuentos, márgenes, etc.).
     """
+
     def __init__(self, pedido, tipo_cliente="ocasional"):
         self.pedido = pedido
         self.tipo_cliente = tipo_cliente

@@ -1,12 +1,13 @@
 import sys
 import os
-# Arregla la ruta para que Python encuentre 'models' y 'services'
-sys.path.append(os.path.dirname(os.path.abspath(__file__))) 
 
-from models.Clientes import Cliente
-from services.Gestor_Clientes import GestorClientes
-from services.Gestor_Pedidos import GestorPedidos
-from services.Gestor_Presupuestos import GestorPresupuestos
+
+from models import Cliente
+from services import GestorPresupuestos, GestorClientes, GestorPedidos
+
+# Arregla la ruta para que Python encuentre 'models' y 'services'
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 
 def menu():
     print("\n=== SOFTGRAPH - Sistema de Imprenta ===")
@@ -17,6 +18,7 @@ def menu():
     print("5. Generar presupuesto")
     print("0. Salir")
     return input("Elija una opción: ")
+
 
 def main():
     clientes = GestorClientes()
@@ -41,7 +43,8 @@ def main():
             cantidad = int(input("Cantidad: "))
             costo_unitario = float(input("Costo unitario ($): "))
             tiempo = float(input("Tiempo estimado (hs): "))
-            pedidos.crear_pedido(cliente_nombre, tipo_trabajo, cantidad, costo_unitario, tiempo)
+            pedidos.crear_pedido(cliente_nombre, tipo_trabajo,
+                                 cantidad, costo_unitario, tiempo)
             print("Pedido registrado correctamente.")
 
         elif opcion == "3":
@@ -62,7 +65,8 @@ def main():
                 continue
 
             cliente = clientes.buscar_por_nombre(cliente_nombre)
-            presupuesto = presupuestos.generar_presupuesto(pedido_encontrado, cliente.tipo)
+            presupuesto = presupuestos.generar_presupuesto(
+                pedido_encontrado, cliente.tipo)
             print("\n" + str(presupuesto))
 
         elif opcion == "0":
@@ -71,6 +75,7 @@ def main():
 
         else:
             print("Opción no válida, intente nuevamente.")
+
 
 if __name__ == "__main__":
     main()

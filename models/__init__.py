@@ -1,5 +1,4 @@
-from .clientes import Cliente
-from .pedidos import Pedido
-from .presupuestos import Presupuesto
-
+from .cliente import Cliente
+from .pedido import Pedido
+from .presupuesto import Presupuesto
 __all__ = ["Cliente", "Presupuesto", "Pedido"]
