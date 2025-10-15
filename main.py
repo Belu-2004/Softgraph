@@ -3,10 +3,9 @@ import os
 # Arregla la ruta para que Python encuentre 'models' y 'services'
 sys.path.append(os.path.dirname(os.path.abspath(__file__))) 
 
-from models.Clientes import Cliente
-from services.Gestor_Clientes import GestorClientes
-from services.Gestor_Pedidos import GestorPedidos
-from services.Gestor_Presupuestos import GestorPresupuestos
+from models import Cliente
+from services import GestorClientes, GestorPedidos, GestorPresupuestos 
+
 
 def menu():
     print("\n=== SOFTGRAPH - Sistema de Imprenta ===")
