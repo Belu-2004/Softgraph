@@ -60,7 +60,7 @@ pip-delete-this-directory.txt
 *.sqlite3 # Base de datos SQLite3 (común en Django/Flask)
 *.db
 /media/ # Carpeta de archivos subidos por el usuario (común en Django)
-
+/data/  # Carpeta de datos JSON del proyecto SoftGraph
 
 # ========================
 # 5. Configuración Local del Sistema Operativo
