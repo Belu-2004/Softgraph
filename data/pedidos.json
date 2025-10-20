@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "cliente": "Juan Perez",
+    "producto": "Laptop",
+    "cantidad": 1,
+    "precio": 1200,
+    "fecha": "2023-01-15"
+  },
+  {
+    "id": 2,
+    "cliente": "Maria Gomez",
+    "producto": "Smartphone",
+    "cantidad": 2,
+    "precio": 800,
+    "fecha": "2023-01-16"
+  },
+  {
+    "id": 3,
+    "cliente": "Luis Rodriguez",
+    "producto": "Tablet",
+    "cantidad": 3,
+    "precio": 600,
+    "fecha": "2023-01-17"
+  }
+]
